@@ -24,6 +24,11 @@ class altPauseMenu extends MovieClip
 			skse.CloseMenu("CustomMenu");
 		};
 	}
+	
+	private function onLoad(): Void
+	{
+		Tween.LinearTween(this,"_alpha", this._alpha, 100, 0.2);
+	}
 
 	function handleInput(details:InputDetails, pathToFocus:Array):Void
 	{
