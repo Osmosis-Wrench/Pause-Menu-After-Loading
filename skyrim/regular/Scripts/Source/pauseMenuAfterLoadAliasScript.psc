@@ -1,4 +1,4 @@
-Scriptname pauseAfterLoadAliasScript extends ReferenceAlias  
+Scriptname pauseMenuAfterLoadAliasScript extends ReferenceAlias  
 {pauses after load}
 
 event OnPlayerLoadGame()
@@ -20,8 +20,7 @@ event OnMenuOpen(String MenuName)
     Utility.WaitMenuMode(0.5)
     if Game.IsJournalControlsEnabled() || UI.IsMenuOpen("RaceSex Menu")
         UI.OpenCustomMenu("alternativePauseMenu")
-        Utility.WaitMenuMode(1.7)
-        UI.CloseCustomMenu()
+        Utility.Wait(1)
     endIf
     GoToState("")
 endEvent
