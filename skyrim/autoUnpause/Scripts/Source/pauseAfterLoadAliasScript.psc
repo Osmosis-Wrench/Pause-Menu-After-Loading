@@ -20,7 +20,7 @@ event OnMenuOpen(String MenuName)
     Utility.WaitMenuMode(0.5)
     if Game.IsJournalControlsEnabled() || UI.IsMenuOpen("RaceSex Menu")
         UI.OpenCustomMenu("alternativePauseMenu")
-        Utility.WaitMenuMode(1.5)
+        Utility.WaitMenuMode(1.7)
         UI.CloseCustomMenu()
     endIf
     GoToState("")
