@@ -1,3 +1,3 @@
 @Echo Off
-Pyro.exe "skyrim\pyro.ppj"
+Pyro.exe "skyrim\autoUnpause\pyro.ppj"
 cmd /k

@@ -7,9 +7,9 @@
     Anonymize="true" 
     Zip="true">
     <Variables>
-        <Variable Name="ModName" Value="pauseMenuThing"/>
+        <Variable Name="ModName" Value="Pause Menu After Loading"/>
         <Variable Name="MyProject" Value="."/>
-        <Variable Name="Dist" Value="../bin"/>
+        <Variable Name="Dist" Value="../../bin"/>
     </Variables>
     <Imports>
         <Import>@MyProject\Scripts\Source</Import>
@@ -29,4 +29,7 @@
              <Match>*.esp|*.pex|*.psc|alternativePauseMenu.swf</Match>
         </ZipFile>
     </ZipFiles>
+    <PostBuildEvent Description="Post-Build Event Example" UseInBuild="true">
+        <Command>echo Finished Building both variants!</Command>
+    </PostBuildEvent>
 </PapyrusProject>
