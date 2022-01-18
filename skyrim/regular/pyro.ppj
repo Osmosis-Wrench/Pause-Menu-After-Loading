@@ -7,7 +7,7 @@
     Anonymize="true" 
     Zip="true">
     <Variables>
-        <Variable Name="ModName" Value="Pause Menu After Loading"/>
+        <Variable Name="ModName" Value="Pause Menu After Loadingv2"/>
         <Variable Name="MyProject" Value="."/>
         <Variable Name="Dist" Value="../../bin"/>
     </Variables>
