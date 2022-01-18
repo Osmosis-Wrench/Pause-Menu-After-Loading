@@ -1,0 +1,11 @@
+How to replace the font:
+
+1. Download the swf with replaceable font ( regular version links to gfxfontlib.swf to automatically report generic font replacers )
+2. Download & Install FFDEC https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version15.0.0
+3. Right click on the downloaded swf and "Open with FFDEC"
+4. Select the fonts section on the left, then in the bottom right select Embed.
+5. In the new Font Embedding window, select All Characters (or less if it's a huge font I guess, uppercase and lowercase are technically good enough for this file.)
+6. Select OK, then select Yes to all.
+7. When prompted to updated texts, select yes.
+8. Hit the save button in the top left hand corner.
+9. Load in game and you should have your updated swf file, congrats :)
