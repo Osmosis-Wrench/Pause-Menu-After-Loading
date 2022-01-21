@@ -1,13 +1,14 @@
 Scriptname pauseMenuAfterLoadAliasScript extends ReferenceAlias  
 {pauses after load}
 
+bool b_firstload = true
+
 event OnPlayerLoadGame()
     OnMenuOpen("Loading Menu")
     SetUp()
 endEvent
 
 event OnInit()
-    OnMenuOpen("Loading Menu")
     SetUp()
 endEvent
 
@@ -17,11 +18,14 @@ endFunction
 
 event OnMenuOpen(String MenuName)
     GoToState("Paused")
-    Utility.WaitMenuMode(0.5)
-    if Game.IsJournalControlsEnabled() || UI.IsMenuOpen("RaceSex Menu")
-        UI.OpenCustomMenu("alternativePauseMenu")
-        Utility.Wait(1)
-    endIf
+    If (!b_firstLoad)
+        if Game.IsJournalControlsEnabled() || UI.IsMenuOpen("RaceSex Menu")
+            UI.OpenCustomMenu("alternativePauseMenu")
+            Utility.Wait(1)
+        endIf
+    else
+        b_firstLoad = false
+    endif
     GoToState("")
 endEvent
 

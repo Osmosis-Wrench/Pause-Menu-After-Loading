@@ -1,0 +1,27 @@
+{
+    "modName": "pauseMenuAfterLoading",
+    "displayName": "Pause Menu After Loading",
+    "cursorFillMode": "topToBottom",
+    "content": [
+                {
+                "text": "Debug Keybinds:",
+                "type": "header"
+                },
+                {
+                    "id": "istartNPCSceneKey:Debug",
+                    "text": "Start NPC Scene",
+                    "type": "keymap",
+                    "help": "Spawn two NPCs and start a scene with them (sets this as the 'current scene')",
+                    "ignoreConflicts": true,
+                    "valueOptions": {
+                        "sourceType": "ModSettingInt",
+                        "defaultValue": 27
+                      },
+                    "action": {
+                        "type": "CallFunction",
+                        "form": "osf.esp|801",
+                        "function": "showPauseMenu"
+                      }
+                }
+            ]
+}
