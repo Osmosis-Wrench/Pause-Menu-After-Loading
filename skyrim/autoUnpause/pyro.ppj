@@ -9,7 +9,7 @@
     <Variables>
         <Variable Name="ModName" Value="Pause Menu After Loading - Auto Unpause"/>
         <Variable Name="MyProject" Value="."/>
-        <Variable Name="Version" Value="v3"/>
+        <Variable Name="Version" Value="v4"/>
         <Variable Name="Dist" Value="../../bin"/>
     </Variables>
     <Imports>
