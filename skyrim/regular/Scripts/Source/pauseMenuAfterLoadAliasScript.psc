@@ -4,10 +4,7 @@ Scriptname pauseMenuAfterLoadAliasScript extends ReferenceAlias
 bool b_firstload = true
 
 event OnPlayerLoadGame()
-	GoToState("Paused")
 	OnMenuOpen("Loading Menu")
-	Utility.Wait(1)
-	GoToState("")
 	SetUp()
 endEvent
 
